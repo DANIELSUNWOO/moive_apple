@@ -67,3 +67,4 @@ for review_box in review_list:
  #   review = review_box.select("")
  #   print(f" - 평점: {score}")
     # 숙제: 리뷰, 작성자, 작성일자 수집!
+    d
