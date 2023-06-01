@@ -24,8 +24,8 @@ def get_reviews():
     # - 컬럼 선택 예: review, score 조회
     #    *컬럼(title, review, score, writer, regdate)
     #    *_id(고유한 식별값) 기본으로 조회 설정
-    # - find()를 통해서 Mongo
-    #
+    #  - find()를 통해서 MongoDB에서 데이터를 가져옴(MongoDB Type)
+    #    → Python에서 사용하는 Type으로 변경(List)
     for one in collection.find({}, {"_id": 0, "title": 1, "score": 1, "review": 1}):
         review_list.append([
                 one["title"],
